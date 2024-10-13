@@ -24,12 +24,20 @@
           <div class="w3-dropdown-hover w3-hide-small">
             <button class="w3-padding-large w3-button" title="More">Poems <i class="fa fa-caret-down"></i></button>     
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
-              <a href="rainy.html" class="w3-bar-item w3-button">Rainy in Randers</a>
+                <a href="rainy.html" class="w3-bar-item w3-button">Rainy in Randers</a>
+                <a href="time.html" class="w3-bar-item w3-button">Time in vain ...</a>
             </div>
           </div>
           <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
         </div>
       </div>
+
+      <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="rainy.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Poems</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Contact</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Home</a>
+  </div>
 
 
       <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
@@ -77,7 +85,18 @@
     <i class="fa fa-linkedin w3-hover-opacity"></i>
     <p><span>&#169;</span> All rights reserved</p>
   </footer>
-  
+
+  <script>
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+
 
 </body>
 </html>
