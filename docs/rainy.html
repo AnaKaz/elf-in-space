@@ -32,12 +32,14 @@
         </div>
       </div>
 
-      <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="rainy.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Poems</a>
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-top" style="margin-top:46px">
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Contact</a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Home</a>
-  </div>
+    <!-- Linking directly to the Poems dropdown content -->
+    <a href="rainy.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Rainy in Randers</a>
+    <a href="time.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Time in vain ...</a>
+</div>
+
 
 
       <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
@@ -88,14 +90,14 @@
 
   <script>
     function toggleFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show"; // Show the navbar
+        } else {
+            x.className = x.className.replace(" w3-show", ""); // Hide the navbar
+        }
     }
-    </script>
+</script>
 
 
 </body>
