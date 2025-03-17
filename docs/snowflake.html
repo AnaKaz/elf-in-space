@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Killing a snowflake</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {font-family: "Lato", sans-serif;}
+    </style>
+</head>
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" title="Toggle Navigation Menu" onclick="toggleFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="https://spiridus.me/" class="w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="https://spiridus.me/#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">Poems <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="rainy.html" class="w3-bar-item w3-button">Rainy in Randers</a>
+                    <a href="time.html" class="w3-bar-item w3-button">Time in vain ...</a>
+                    <a href="snowflake.html" class="w3-bar-item w3-button">Time in vain ...</a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-top" style="margin-top:46px">
+        <a href="https://spiridus.me/#contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Contact</a>
+        <a href="rainy.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Rainy in Randers</a>
+        <a href="time.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Time in vain ...</a>
+        <a href="snowflake.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Time in vain ...</a>
+    </div>
+
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide">Killing a snowflake</h2>
+        <pre style="text-align: left; font-family: inherit; line-height: 1;">
+                        Yesterday a snowflake fell <br> 
+                        It's mathematical perfection <br> 
+                        Amazed me <br> 
+                        <hr>
+                        By the time I had the chance<br>
+                        To immortalise it<br>
+                        With my iPhone camera <br>
+                        <hr>
+                        It disappeared<br>
+                        Against my warmth...<br>
+                        Melted ...<br>
+                        <hr>
+                        How transient <br>
+                        How perfect <br>
+                        How ephemeral <br>
+
+        </pre>
+        <p class="w3-opacity"><span>&#169;</span><i>by Spiridus</i></p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p><span>&#169;</span> All rights reserved</p>
+    </footer>
+
+    <script>
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";  // Show the navbar
+            } else {
+                x.className = x.className.replace(" w3-show", ""); // Hide the navbar
+            }
+        }
+    </script>
+</body>
+</html>
